@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+body{
+  background: #E6E4E9;
+}
+
+@layer utilities {
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+  }
+
+  .float-animation {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .float-delay-1 {
+    animation-delay: 0.5s;
+  }
+
+  .float-delay-2 {
+    animation-delay: 1s;
+  }
+
+  .float-delay-3 {
+    animation-delay: 1.5s;
+  }
+}
+
+.shape {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(15px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape1 { background: #6ee7b7; top: -40px; left: -20px; }
+.shape2 { background: #93c5fd; top: 60px; right: -30px; }
+.shape3 { background: #fde047; bottom: -40px; left: 40%; }
+.shape4 { background: #a5b4fc; bottom: 20px; right: 40px; }
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+
