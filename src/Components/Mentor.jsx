@@ -53,7 +53,7 @@ export default function MentorsCarousel() {
         </h2>
 
         <div className="flex gap-4">
-          <button className="mentor-prev w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 shadow flex items-center justify-center">
+          <button className="mentor-prev w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 shadow-[0_4px_12px_rgba(0,0,0,0.25)] flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path
                 d="M15 18L9 12L15 6"
@@ -65,7 +65,7 @@ export default function MentorsCarousel() {
             </svg>
           </button>
 
-          <button className="mentor-next w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 shadow flex items-center justify-center">
+          <button className="mentor-next w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 shadow-[0_4px_12px_rgba(0,0,0,0.25)] flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path
                 d="M9 6L15 12L9 18"
@@ -84,7 +84,7 @@ export default function MentorsCarousel() {
         spaceBetween={24}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         navigation={{ nextEl: ".mentor-next", prevEl: ".mentor-prev" }}
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 12 },
@@ -95,7 +95,7 @@ export default function MentorsCarousel() {
         }}
       >
         {mentors.map((m, idx) => (
-          <SwiperSlide key={idx} className="flex justify-center">
+          <SwiperSlide key={idx} className="flex justify-center m-3 md:m-2.5">
             <div
               className="
               relative 
