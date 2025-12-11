@@ -11,14 +11,14 @@ const mentors = [
     exp: "35 yrs",
     courses: 43,
     role: "Spiritual Strategist | Global Spellcaster",
-    img: "public/ssc_board.jpg",
+    img: "public/rdj.jpg",
   },
   {
     name: "Abhishek Ji",
     exp: "12 yrs",
     courses: 72,
     role: "Astrologer | Occult Grandmaster",
-    img: "src\\assets\\react.svg",
+    img: "public/cris.jpg",
   },
   {
     name: "Dr. Maneesh",
@@ -124,9 +124,9 @@ export default function MentorsCarousel() {
                   src={m.img}
                   alt={m.name}
                   className="
-                    w-60 h-50
-                    sm:w-50 sm:h-40
-                    md:w-80 md:h-70
+                    w-60 h-60
+                    sm:w-60 sm:h-60
+                    md:w-80 md:h-80
                     object-cover rounded-full 
                     mt-6 sm:mt-8
                   "
