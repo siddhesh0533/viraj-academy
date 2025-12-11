@@ -1,4 +1,5 @@
 import React from 'react'
+import {assets} from '../assets/assets'
 
 const CourseCard = () => {
   return (
@@ -11,7 +12,7 @@ const CourseCard = () => {
         
         {/* Course Image */}
         <img
-          src="public\ssc_board.jpg"
+          src={assets.ssc_board}
           className="h-44 w-full object-cover rounded-t-2xl"
         />
 

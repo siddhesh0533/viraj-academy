@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { assets } from "../assets/assets";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,14 +12,14 @@ const mentors = [
     exp: "35 yrs",
     courses: 43,
     role: "Spiritual Strategist | Global Spellcaster",
-    img: "public/rdj.jpg",
+    img: assets.rdj
   },
   {
     name: "Abhishek Ji",
     exp: "12 yrs",
     courses: 72,
     role: "Astrologer | Occult Grandmaster",
-    img: "public/cris.jpg",
+    img: assets.cris
   },
   {
     name: "Dr. Maneesh",
